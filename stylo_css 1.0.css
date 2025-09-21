@@ -1,0 +1,218 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00258b;
+}
+
+.logo span {
+  color: #ffa200;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: l;
+}
+
+.header nav ul li a:hover {
+  color: #1d4ed8;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #1d4ed8, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url('img/Encabezado_Will.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  height: 800px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #facc15;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #f59e0b;
+  color: white;
+}
+
+/* Catálogo */
+/* Nuevo contenedor flex para catálogo */
+.catalogo-contenido {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start; /* Mantiene todo alineado arriba */
+}
+
+/* Ajustar filtros */
+.filtros {
+  background-color: #fef3c7;
+  border: #b45309 2px solid;
+  padding: 0.5rem;
+  width: 200px;  /* ancho fijo para que no se mueva */
+  border-radius: 8px;
+  flex-shrink: 0; /* evita que se encoja */
+}
+
+/* Libros a la derecha */
+.libros {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex: 1; /* ocupa el resto del espacio */
+}
+
+/*
+.catalogo {
+  padding: 3rem 2rem;
+  background: #ecfdf5;
+  
+}
+
+.catalogo h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #1d4ed8;
+  width: fit-content;
+  word-spacing: 10px;
+  flex-direction: row;
+}
+
+.filtros {
+  margin-bottom: 1rem;
+  background-color: #fef3c7;
+  width: fit-content;
+  border: #b45309 2px solid;
+  overflow: auto;
+  flex-direction: row;
+  text-align: left;
+  padding: 0.5rem;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.libros {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+  */
+
+.libro {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.libro img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Historia destacada */
+.destacado {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background: #e0e7ff;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.destacado img {
+  max-width: 150px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.destacado .info {
+  flex: 1;
+}
+
+/* Juegos */
+.juegos {
+  padding: 3rem 2rem;
+  background: #fff7ed;
+}
+
+.juegos h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #b45309;
+}
+
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.juego {
+  background: #fde68a;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1d4ed8;
+  color: white;
+}
